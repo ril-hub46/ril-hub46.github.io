@@ -175,7 +175,6 @@ main { max-width: var(--max-width); margin: 0 auto; padding: 0 1.5rem; }
 
 .project-grid-stacked {
   grid-template-columns: 1fr;
-  max-width: 420px;
 }
 .project-row-body h3 { margin-top: 0; margin-bottom: 0.4rem; font-size: 1.15rem; }
 .project-row-body p { color: var(--muted); font-size: 0.95rem; margin: 0; }
