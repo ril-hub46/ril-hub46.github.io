@@ -1,0 +1,8 @@
+<footer class="site-footer">
+  <p class="footer-contact">
+    <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+    {{ with .Site.Params.github }} · <a href="{{ . }}">GitHub</a>{{ end }}
+    {{ with .Site.Params.linkedin }} · <a href="{{ . }}">LinkedIn</a>{{ end }}
+  </p>
+  <p>&copy; {{ now.Year }} {{ .Site.Params.name | default "Your Name" }}</p>
+</footer>

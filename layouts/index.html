@@ -1,0 +1,49 @@
+{{ define "main" }}
+
+<section class="hero">
+  {{ with (.Params.photo | default .Site.Params.photo) }}
+  <img class="hero-photo" src="{{ . | relURL }}" alt="Profile photo">
+  {{ end }}
+  <h1>{{ .Params.name | default .Site.Params.name }}</h1>
+  <h2>{{ .Params.role | default .Site.Params.role }}</h2>
+  <p class="tagline">{{ .Site.Params.tagline }}</p>
+  <p class="intro">{{ .Params.intro }}</p>
+  <div class="cta">
+    {{ with .Site.Params.cv_pdf }}<a class="btn" href="{{ . | relURL }}">Download CV</a>{{ end }}
+    {{ with .Site.Params.github }}<a class="btn btn-outline" href="{{ . }}">GitHub</a>{{ end }}
+    {{ with .Site.Params.linkedin }}<a class="btn btn-outline" href="{{ . }}">LinkedIn</a>{{ end }}
+  </div>
+</section>
+
+<section id="experience" class="section">
+  <h2>Experience</h2>
+  <div class="timeline">
+    {{ range hugo.Data.experience }}
+    {{ $exp := . }}
+    <div class="timeline-item">
+      {{ with .logo }}<img class="company-logo" src="{{ . | relURL }}" alt="Logo {{ $exp.company }}">{{ end }}
+      <div class="timeline-body">
+        <h3>{{ .title }} - {{ .company }}</h3>
+        <p class="period">{{ .period }}</p>
+        <ul>{{ range .bullets }}<li>{{ . }}</li>{{ end }}</ul>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+
+<section id="skills" class="section">
+  <h2>Skills</h2>
+  <div class="skills-columns">
+    <div class="skills-col">
+      <h3>Data Engineering</h3>
+      <ul>{{ range hugo.Data.skills.engineering }}<li>{{ . }}</li>{{ end }}</ul>
+    </div>
+    <div class="skills-col">
+      <h3>Data Science</h3>
+      <ul>{{ range hugo.Data.skills.science }}<li>{{ . }}</li>{{ end }}</ul>
+    </div>
+  </div>
+</section>
+
+{{ end }}

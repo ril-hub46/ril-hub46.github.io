@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+<section class="section section-page">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  {{ with .Params.intro }}<p class="intro">{{ . }}</p>{{ end }}
+  {{ with .Site.Params.phone }}<p class="intro">{{ . }}</p>{{ end }}
+  <div class="cta">
+    {{ with .Site.Params.email }}<a class="btn" href="mailto:{{ . }}">{{ . }}</a>{{ end }}
+    {{ with .Site.Params.github }}<a class="btn btn-outline" href="{{ . }}">GitHub</a>{{ end }}
+    {{ with .Site.Params.linkedin }}<a class="btn btn-outline" href="{{ . }}">LinkedIn</a>{{ end }}
+    {{ with .Site.Params.cv_pdf }}<a class="btn btn-outline" href="{{ . | relURL }}">Download CV</a>{{ end }}
+  </div>
+</section>
+
+{{ end }}

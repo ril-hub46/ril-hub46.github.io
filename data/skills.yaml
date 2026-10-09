@@ -1,0 +1,19 @@
+engineering:
+  - "Python"
+  - "PySpark"
+  - "SQL / PostgreSQL / BigQuery"
+  - "Airflow"
+  - "dbt"
+  - "Docker"
+  - "FastAPI"
+  - "GitLab CI/CD"
+  - "GCP / Azure"
+  - "Linux / Bash"
+
+science:
+  - "Statistical modeling"
+  - "Machine Learning"
+  - "MLOps"
+  - "Econometrics"
+  - "Power BI / Data visualization"
+  - "R / SAS"

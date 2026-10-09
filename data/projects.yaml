@@ -1,0 +1,9 @@
+- title: "IFRS 9 Credit Scoring & ECL"
+  description: >
+    End-to-end credit risk scoring simulation: trains a Probability of
+    Default (PD) model and deploys it in an interactive Streamlit
+    dashboard to compute Expected Credit Loss (ECL = PD x LGD x EAD)
+    under IFRS 9. Packaged with Poetry and Docker for reproducibility.
+  stack: ["Python", "Scikit-learn", "Pandas", "Streamlit", "Docker", "Poetry"]
+  repo: "https://github.com/ril-hub46/scoring_ifrs9"
+  demo: ""

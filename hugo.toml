@@ -1,0 +1,12 @@
+baseURL = "https://ril-hub46.github.io/"
+locale = "en-us"
+title = "Rilwane - Data Engineer & Scientist"
+
+[params]
+  name = "Rilwane"
+  tagline = "I turn data into clear, actionable decisions."
+  email = "rilwanouan5@gmail.com"
+  phone = "+33 6 15 44 21 78"
+  github = "https://github.com/ril-hub46"
+  linkedin = "https://linkedin.com/in/ril-eng"
+  cv_pdf = "/cv/cv.pdf"
