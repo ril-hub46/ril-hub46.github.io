@@ -1,0 +1,17 @@
+- title: "Vector Database Comparison"
+  description: >
+    Quick benchmark of a few vector databases (latency, memory) on the
+    same set of embeddings.
+  stack: ["Python", "FAISS", "Qdrant"]
+  status: "in progress"
+  repo: ""
+  demo: ""
+
+- title: "Mini LLM-in-the-loop Pipeline"
+  description: >
+    POC of an agent chaining extraction, transformation, and verification
+    of data via an LLM, to see where it breaks.
+  stack: ["Python", "LLM API"]
+  status: "exploratory"
+  repo: ""
+  demo: ""

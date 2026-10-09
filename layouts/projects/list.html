@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+<section class="section section-page">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  <div class="project-grid project-grid-stacked">
+    {{ range hugo.Data.projects }}
+    <div class="project-card">
+      {{ with .image }}<img class="project-image" src="{{ . | relURL }}" alt="">{{ end }}
+      <h3>{{ .title }}</h3>
+      <p>{{ .description }}</p>
+      <div class="tags">
+        {{ range .stack }}<span class="tag">{{ . }}</span>{{ end }}
+      </div>
+      <div class="links">
+        {{ if .repo }}<a href="{{ .repo }}">Python code</a>{{ end }}
+        {{ if .demo }}<a href="{{ .demo }}">Demo</a>{{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+
+{{ end }}

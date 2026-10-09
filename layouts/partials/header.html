@@ -1,0 +1,11 @@
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="{{ "/" | relURL }}">{{ .Site.Params.name | default "Your Name" }}</a>
+    <nav class="tabs">
+      <a class="tab{{ if .IsHome }} active{{ end }}" href="{{ "/" | relURL }}">Profile</a>
+      <a class="tab{{ if eq .Section "projects" }} active{{ end }}" href="{{ "/projects/" | relURL }}">Projects</a>
+      <a class="tab{{ if eq .Section "experiments" }} active{{ end }}" href="{{ "/experiments/" | relURL }}">Experiments</a>
+      <a class="tab{{ if eq .Section "contact" }} active{{ end }}" href="{{ "/contact/" | relURL }}">Contact</a>
+    </nav>
+  </div>
+</header>

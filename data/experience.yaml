@@ -1,0 +1,24 @@
+- title: "Consultant Data Engineer"
+  company: "Forvis Mazars"
+  logo: "/img/logos/forvis-mazars.png"
+  period: "2026 (6 months) - Paris, France"
+  bullets:
+    - "Designed and built Python ingestion and transformation pipelines from 4 heterogeneous sources (Excel, APIs) into the data platform, feeding 15+ HR and healthcare indicators"
+    - "Contributed to the FastAPI back-end architecture, with automated testing and deployment via GitLab CI/CD"
+    - "Hardened the codebase with Pytest unit tests, error handling via logging, and Sphinx documentation"
+
+- title: "Quantitative Risk Analyst"
+  company: "Banque Centrale Populaire"
+  logo: "/img/logos/bcp.jpg"
+  period: "2025 (6 months) - Casablanca, Morocco"
+  bullets:
+    - "Designed a Monte Carlo methodology for the regulatory VaR of 4 portfolios, moving from a manual calculation to an automated, reproducible Python pipeline exposed through a Tkinter interface"
+    - "Reimplemented valuation (Black-Scholes) and volatility (GARCH) models without access to the original source code, validated by comparison with historical results"
+
+- title: "AI Engineer"
+  company: "Royal Air Maroc"
+  logo: "/img/logos/royal-air-maroc.png"
+  period: "2024 (2 months) - Casablanca, Morocco"
+  bullets:
+    - "Built an Outlook pipeline using the GPT API to extract deadlines from 50 daily emails"
+    - "Stored results in a database and exported them to a Microsoft calendar tool to track follow-ups"
