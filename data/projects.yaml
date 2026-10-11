@@ -1,4 +1,4 @@
-- title: "IFRS 9 Credit Scoring & ECL"
+- title: "IFRS 9 Credit Scoring" 
   description: >
     End-to-end credit risk scoring simulation: trains a Probability of
     Default (PD) model and deploys it in an interactive Streamlit
